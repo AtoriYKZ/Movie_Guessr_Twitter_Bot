@@ -1,0 +1,13 @@
+This is a python script which just allow you to tweet something. You have to schedule it if you want it to tweet periodically.
+You can use Heroku as an example. Deploy it and then schedule it with Heroku Scheduler.
+
+This script will randomly choose a function between 3 functions:
+- Guess_Synopsis()
+- Guess_Actor()
+- Guess_Director()
+
+Guess_Synopsis() will tweet a synopsis of a random movie between the top 250 ranked movies by IMDb.
+Guess_Actor() will tweet a headshot of a random actor chosen in the top 250 movies. This only can be the main actors of this movies (3 actors per movie).
+Guess_Director() will tweet a list of 3 movies of a director.
+
+If this script has already been run once, it will announce the results with the function Result_day(). This function will tweet the answer of the last question and the 3 fastest winners.
